@@ -9,6 +9,9 @@ import Resume from './Resume';
 import Projects from './Projects';
 import Contact from './Contact';
 import Signin from './Signin';
+import Valani from './Valani';
+import Rendering from './Rendering';
+import HighendPage from './Highend';
 
 import './index.css';
 
@@ -51,9 +54,9 @@ const RouteList = ({location, match}) => {
                   <Route exact path="/" component={WithAuth(Home)} />
                   <Route path="/resume" component={WithAuth(Resume)} />
                   <Route exact path="/projects" component={WithAuth(Projects)} />
-                  <Route path="/projects/highend" component={Home} />
-                  <Route path="/projects/valani" component={Home} />
-                  <Route path="/projects/rendering" component={Home} />
+                  <Route path="/projects/highend" component={WithAuth(HighendPage)} />
+                  <Route path="/projects/valani" component={WithAuth(Valani)} />
+                  <Route path="/projects/rendering" component={WithAuth(Rendering)} />
                   <Route path="/contact" component={WithAuth(Contact)} />
                   <Route path="/signin" component={Signin} />
                 </Switch>

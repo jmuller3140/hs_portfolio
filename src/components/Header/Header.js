@@ -34,11 +34,14 @@ export default class Header extends React.Component{
 
 const HeaderContainer = styled.div`
 width:100%;
-padding-top:5em;
-padding-bottom:5em;
+padding-top:2em;
+padding-bottom:2em;
+position: absolute;
 display: inline-flex;
 justify-content: space-between;
 z-index: 1;
+border-bottom: 1px solid black;
+background-color: #eee;
 `;
 const Titles = styled.div`
 width:15em;
@@ -47,7 +50,6 @@ font-family: Lovelyn;
 color:black;
 letter-spacing: 2px;
    text-align:right;
-   z-index: 1;
 `;
 const JobTitle = styled.div`
 font-size:20pt;

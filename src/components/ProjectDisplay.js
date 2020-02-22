@@ -12,9 +12,9 @@ export default class ProjectDisplay extends React.Component {
 
     componentDidMount(){
             let projectArray = {project :
-                [{name: "HIGHEND", picturePath: window.location.origin + '/images/ring.jpg', key:0, description:"Responsibly sourced jewels", link:'/highend'},
-                {name: "VALANI ATELIER", picturePath: window.location.origin + '/images/bracelet.jpg', key:1, description: "A minimalist jewelry brand", link: '/valani'},
-                {name: "RENDERING", picturePath: window.location.origin + '/images/rendering.jpg', key:2, description:"Gouache rendering", link: '/rendering'},]};
+                [{name: "HIGHEND", picturePath: window.location.origin + '/images/ring.jpg', key:0, description:"Responsibly sourced jewels", link:'/projects/highend'},
+                {name: "VALANI ATELIER", picturePath: window.location.origin + '/images/braceletsqr.jpg', key:1, description: "A minimalist jewelry brand", link: '/projects/valani'},
+                {name: "RENDERING", picturePath: window.location.origin + '/images/drawingsqr.jpg', key:2, description:"Gouache rendering", link: '/projects/rendering'},]};
             let projectSection = projectArray.project.map((post) => {
                     let props = {name: post.name, picturePath: post.picturePath, key: post.key, description: post.description, link:post.link};
                     return (<Project {...props} />)

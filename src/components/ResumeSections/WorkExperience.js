@@ -31,6 +31,10 @@ const WorkExperience = (props) => {
         font-family: Moon-Light;
         margin:.1em;
     `
+
+    const DescriptionItem = styled.li`
+        margin-top: .25rem;
+    `;
     return(
         <WorkItemContainer>
             <CompanyAndDateContainer>
@@ -43,9 +47,9 @@ const WorkExperience = (props) => {
                 <DescriptionContainer>
                     {
                         descriptions.map((description, idx) => (
-                                <li key={idx}>
+                                <DescriptionItem key={idx}>
                                   {description}
-                                </li>
+                                </DescriptionItem>
                         ))
                     }
                 </DescriptionContainer>

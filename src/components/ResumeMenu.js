@@ -141,43 +141,6 @@ export default class ResumeMenu extends React.Component{
             this.setState({languagesAndSkillsSection})
     }
     render(){
-        const ResumeContainer = styled.div`
-            padding-bottom:5em;
-            background-color: #eee;
-        `;
-        const SectionContainer = styled.div`
-            display:inline-flex;
-            justify-content: flex-start;
-            background-color: #eee;
-            width:100%;
-        `;
-        const MenuContainer = styled.div`
-            background-color: #eee;
-            padding-top:.2em;
-            color:black;
-            display:flex;
-            justify-content: flex-start;
-            flex-direction:column;
-            font-family: Raleway-Regular;
-            font-size: 20pt;
-            text-align:right;
-            margin-left:9.6em;
-            width:10em;
-        `;
-        const MenuItem = styled.div`
-            margin: 1em;
-            letter-spacing: .1em;
-        `;
-        const EducationContainer = styled.div`
-            display:flex;
-            flex-direction:column;
-            justify-content: flex-start;
-            margin-left:5em;
-            text-align:left;
-            width:495px;
-            padding-bottom:2em;
-            background-color: #eee;
-        `;
         const { educationSection, languagesAndSkillsSection, workSection } = this.state;
             return(
             <ResumeContainer>
@@ -209,3 +172,44 @@ export default class ResumeMenu extends React.Component{
         )
     }
 }
+
+const ResumeContainer = styled.div`
+padding-bottom:5em;
+background-color: #eee;
+`;
+const SectionContainer = styled.div`
+display:inline-flex;
+justify-content: flex-start;
+background-color: #eee;
+width:100%;
+margin-bottom: 3rem;
+`;
+const MenuContainer = styled.div`
+background-color: #eee;
+padding-top:.2em;
+color:black;
+display:flex;
+justify-content: flex-start;
+flex-direction:column;
+font-family: Raleway-Regular;
+font-size: 20pt;
+text-align:right;
+margin-left:9.6em;
+width:10em;
+border-right: 1px solid silver;
+padding-right: 2.5rem;
+`;
+const MenuItem = styled.div`
+margin: 1em;
+letter-spacing: .1em;
+`;
+const EducationContainer = styled.div`
+display:flex;
+flex-direction:column;
+justify-content: flex-start;
+margin-left:5em;
+text-align:left;
+width:495px;
+padding-bottom:2em;
+background-color: #eee;
+`;

@@ -4,6 +4,7 @@ import {Header} from '../components/Header';
 import RouteList from './RouteList';
 
 import './index.css';
+import 'react-image-lightbox/style.css';
 
 ///////////////////////////////////////////////////////////
 /* authRoutes returns the routes dynamically generated */

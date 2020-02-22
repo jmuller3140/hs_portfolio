@@ -21,6 +21,9 @@ const Home = () => {
         color:black;
         font-size:20pt;
         font-family: Raleway-Regular;
+        background-color: white;
+        border-radius: 5px;
+        padding: 100px;
     `;
 
     return(
