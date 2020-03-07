@@ -24,6 +24,7 @@ const Home = () => {
         background-color: white;
         border-radius: 5px;
         padding: 100px;
+        box-shadow: 0 5px 10px #333;
     `;
 
     return(

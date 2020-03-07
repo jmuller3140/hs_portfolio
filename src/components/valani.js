@@ -77,5 +77,7 @@ const Image = styled.img`
     &:hover{
         transform: scale(3);
         transition: all .2s ease-in-out;
+        left:50%;
+        top:45%;
     }
 `;
